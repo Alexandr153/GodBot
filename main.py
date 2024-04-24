@@ -5,17 +5,8 @@ from dataclasses import dataclass
 from typing import Union, Optional
 import psycopg2
 from core.config.config import bot, dispatcher as dp
+from core.state.states import stop_bot, start_bot
 
-
-# On start bot
-async def start_bot() -> None:
-    await set_commands(bot)
-    print("[-] Бот начал работу")
-
-
-# On Stop bot
-async def stop_bot() -> None:
-    print("[-] Бот закончил работу")
 
 import core.handlers.commands.start
 
