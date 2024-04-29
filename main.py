@@ -9,6 +9,7 @@ from core.config.config import bot, dispatcher as dp
 
 import core.state.states
 import core.handlers.commands.start
+import core.handlers.callbacks
 
 
 async def main() -> None:
