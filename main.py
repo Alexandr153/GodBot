@@ -7,9 +7,11 @@ import psycopg2
 from core.config.config import bot, dispatcher as dp
 
 
+# handlers, states, callbacks
 import core.state.states
-import core.handlers.commands.start
 import core.handlers.callbacks
+import core.handlers.commands.start
+import core.handlers.commands.menu
 
 
 async def main() -> None:

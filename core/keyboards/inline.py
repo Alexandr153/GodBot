@@ -14,3 +14,18 @@ inline_start = InlineKeyboardMarkup(inline_keyboard=[
         )
     ]
 ])
+
+list_of_bots = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton(
+            text="TranslatePictureBot",
+            callback_data="Translate_Picture_Bot"
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            text="AntiCensorshipBot",
+            callback_data="Anti_Censorship_Bot"
+        )
+    ]
+])
